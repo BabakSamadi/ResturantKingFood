@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Website Bootstrap </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+
+    <!-- Navbar Here -->
+    <header dir="rtl">
+        <nav class="navbar  menu navbar-expand-lg  bg-white shadow-sm p-5 ">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold fs-3" href="#">
+                    <i class="fa-solid fa-bowl-food"></i> Food King
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse " id="mainNavbar">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mx-auto fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">صفحه اصلی</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                                لیست غذا ها <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li><a class="dropdown-item" href="#">پروپیتزا</a></li>
+                                <li><a class="dropdown-item" href="#">مرغ</a></li>
+                                <li><a class="dropdown-item" href="#">پرو برگر</a></li>
+                                <li><a class="dropdown-item" href="#"> پرو پاستا</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">وبلاگ</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                                صفحات <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li><a class="dropdown-item" href="#">صفحه ۱</a></li>
+                                <li><a class="dropdown-item" href="#">صفحه ۲</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">درباره ما</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تماس با ما</a>
+                        </li>
+                    </ul>
+
+                    <!-- Buttons -->
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            تماس بگیرید
+                        </a>
+
+                        <button class="btn btn-warning  " data-bs-toggle="offcanvas" data-bs-target="#shopcard">
+                            لیست سفارشات
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span class="qounter-Shop-list">0</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </nav>
+
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="shopcard">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    سبد خرید
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <div class="ShopCard-List text-center text-muted">
+                    سبد خرید شما خالی است
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <strong>مجموع:</strong>
+                    <span>0 تومان</span>
+                </div>
+
+                <button class="btn btn-success w-100 mt-3">
+                    ثبت سفارش
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">تماس با ما</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <h3 class="modal-title text-center">Food King</h3>
+                        <p class="mt-3">این شامل تعاملات بین یک کسب و کار و مشتریان آن است. این در مورد رفع
+                            نیازهای مشتریان و حل مشکلات آنها است. خدمات موثر به مشتری بسیار مهم است</p>
+                        <div class="card-img d-flex align-items-center ">
+                            <img src="./Images/2/01.jpg">
+                            <img src="./Images/2/02.jpg">
+                            <img src="./Images/2/03.jpg">
+                            <img src="./Images/2/04.jpg">
+                        </div>
+
+                        <h3 class="modal-title text-center mt-3"><i class="fa-solid fa-phone-flip"></i> اطلاعات تماس
+                        </h3>
+
+                        <h5 class="mt-3"><i class="fa-solid fa-location-dot"></i> خیابان اصلی ملبورن استرالیا </h5>
+                        <h5><i class="fa-regular fa-envelope"></i> INFO@FOODKING.COM</h5>
+                        <h5> <i class="fa-regular fa-clock"></i> یکشنبه-جمعه، 9 صبح تا 5 بعد از ظهر </h5>
+                        <h5><i class="fa-solid fa-phone-flip"></i> +11002345909</h5>
+
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            بستن
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <!--SectionHere-->
+    <main></main>
+
+    <!--Footer Here-->
+    <footer></footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
